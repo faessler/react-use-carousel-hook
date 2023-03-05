@@ -1,0 +1,49 @@
+{
+  "name": "react-use-carousel-hook",
+  "version": "0.0.1",
+  "description": "Simple and easy to use carousel for react apps",
+  "keywords": [
+    "react",
+    "hook",
+    "carousel"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faessler/react-use-carousel-hook.git"
+  },
+  "author": "faessler",
+  "license": "MIT",
+  "homepage": "https://github.com/faessler/react-use-carousel-hook#readme",
+  "bugs": {
+    "url": "https://github.com/faessler/react-use-carousel-hook/issues"
+  },
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle build --jsx React.createElement --sourcemap false",
+    "dev": "microbundle watch --jsx React.createElement --sourcemap true",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'update changelog' && npm version major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'update changelog' && npm version minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'update changelog' && npm version patch && git push origin && git push origin --tags",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "peerDependencies": {
+    "react": ">=18.x",
+    "react-dom": ">=18.x"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "generate-changelog": "^1.8.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "microbundle": "^0.15.1",
+    "prettier": "^2.8.4"
+  }
+}

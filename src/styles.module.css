@@ -1,0 +1,14 @@
+.slides {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  scroll-snap-align: start;
+}
