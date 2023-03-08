@@ -1,0 +1,49 @@
+.slides {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  gap: 32px;
+}
+
+.slide {
+  padding: 24px;
+  border-radius: 24px;
+  color: #242424;
+  background-color: #fff;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: goldenrod;
+}
+.control:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+}
+.paginationButton {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background: lightgray;
+}
+.paginationButton[aria-selected="true"] {
+  background: goldenrod;
+}
