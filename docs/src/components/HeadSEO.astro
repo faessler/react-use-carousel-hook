@@ -1,0 +1,21 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { SITE } from '../consts';
+
+type Props = { canonicalUrl: URL } & CollectionEntry<'docs'>['data'];
+
+const { ogLocale, title, description, canonicalUrl } = Astro.props;
+const formattedContentTitle = `${title} 🚀 ${SITE.title}`;
+---
+
+<!-- Page Metadata -->
+<link rel="canonical" href={canonicalUrl} />
+
+<!-- OpenGraph Tags -->
+<meta property="og:title" content={formattedContentTitle} />
+<meta property="og:type" content="article" />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:locale" content={ogLocale ?? SITE.defaultLanguage} />
+<meta name="description" property="og:description" content={description ?? SITE.description} />
+<meta property="og:site_name" content={SITE.title} />
+
