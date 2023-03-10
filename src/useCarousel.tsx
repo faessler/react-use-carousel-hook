@@ -20,7 +20,6 @@ type PaginationProps = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDiv
 };
 
 export const useCarousel = ({ loop = false } = {}) => {
-  console.log("styles", styles);
   const slidesRef = useRef<HTMLDivElement>(null);
   const carouselId = useId();
   let hasPagination = false;
