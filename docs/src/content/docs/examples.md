@@ -3,27 +3,26 @@ title: 'Examples'
 description: 'Demonstration of different carousel use cases.'
 ---
 
-## All features in action
+## Images
 
-Example of a useCarousel implementation that fully exploits the package's potential.
+A carousel with images as slides.
 
-<iframe src="https://codesandbox.io/embed/styles-one-slide-per-view-bw4xst?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="styles-one-slide-per-view"
-     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+<iframe src="https://codesandbox.io/embed/images-1ydq92?codemirror=1&hidedevtools=1&hidenavigation=1&module=/src/App.tsx,/src/App.css"
+     style="width:100%; height:600px; border:0; border-radius: 4px; overflow:hidden;"
+     title="styles-one-slide"
+     allow="accelerometer; ambient-light-sensor;"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-## Styles
-
+## Controlling slides per view
 ### One slide per view
 
 Example of a useCarousel implementation that has one slide per view.
 
-<iframe src="https://codesandbox.io/embed/styles-one-slide-bw4xst?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+<iframe src="https://codesandbox.io/embed/one-slide-per-view-7ivi1m?codemirror=1&hidedevtools=1&hidenavigation=1&module=/src/App.tsx,/src/App.css"
+     style="width:100%; height:400px; border:0; border-radius: 4px; overflow:hidden;"
      title="styles-one-slide"
-     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     allow="accelerometer; ambient-light-sensor;"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
@@ -31,9 +30,9 @@ Example of a useCarousel implementation that has one slide per view.
 
 Example of a useCarousel implementation that has multiple slides per view.
 
-<iframe src="https://codesandbox.io/embed/tender-albattani-qn2rbp?fontsize=14&hidenavigation=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="styles-multiple-slides-per-view"
-     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+<iframe src="https://codesandbox.io/embed/multiple-slides-per-view-dgsn67?codemirror=1&hidedevtools=1&hidenavigation=1&module=/src/App.tsx,/src/App.css"
+     style="width:100%; height:400px; border:0; border-radius: 4px; overflow:hidden;"
+     title="styles-one-slide"
+     allow="accelerometer; ambient-light-sensor;"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
