@@ -1,4 +1,6 @@
 .slides {
+  display: grid;
+  grid-auto-flow: column;
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
